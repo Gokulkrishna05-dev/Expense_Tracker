@@ -26,14 +26,14 @@ button{
     font-size: 2rem;
 }
 .into{
-    color: yellow;
+    color: black;
 }
 .input{
     padding: 20px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    background-color: rgb(0, 0, 0,0.9);
+    background: linear-gradient(to right,rgb(0, 0, 0,0.6),skyblue);
     color: white;
 }
 .output{
