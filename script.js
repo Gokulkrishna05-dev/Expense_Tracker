@@ -76,6 +76,7 @@ let details = JSON.parse(localStorage.getItem("detail")) || [];
 
 function add() {
     let value = parseInt(num.value)
+    let des_value=des.value
     // Validation
     if (des.value.trim() === "") {
         alert("Enter Description")
@@ -84,11 +85,13 @@ function add() {
         alert("Enter Valid Amount")
     }
     else {
+        num.value=""
+        des.value=""
         // Total Balance
         array.push(value)
         localStorage.setItem("total", JSON.stringify(array))
         // Details
-        details.push({ description: des.value, amount: value })
+        details.push({ description: des_value, amount: value })
         localStorage.setItem("detail", JSON.stringify(details))
         // Income
         if (value >= 0) {
@@ -124,7 +127,7 @@ function show() {
         let btn = document.createElement("span")
         btn.classList.add("button")
         btn.innerHTML = `<i class="fa-solid fa-xmark"></i>`
-        span_des.textContent = e.description
+        span_des.textContent = e.description+" - "
         span_amt.textContent = e.amount
         div.append(span_des)
         div.append(span_amt)
