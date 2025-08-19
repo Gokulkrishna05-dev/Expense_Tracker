@@ -151,6 +151,7 @@ input{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        row-gap: 30px;
     }
 }
 @media screen and (max-width:330px){
