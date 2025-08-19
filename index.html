@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="outer">
+  <div class="input">
+  <div class="into">
+  <h1>Income Expense Tracker</h1>
+  </div>
+  <div class="balance">
+   <p>Your Balance</p>
+  <p class="balance-p"><span>&#8377</span> <span id="balance-amt">0</span></p>
+  </div>
+  <div class="inc-exp">
+      <div id="income">
+       <p>Income</p>
+       <p id="income-amt">0</p>
+      </div>
+      <div id="expense">
+       <p>Expense</p>
+       <p id="exp-amt">0</p>
+      </div>
+    </div>
+    <div class="des">
+        <div>Description</div>
+        <input type="text" id="des">
+        <div>Amount</div>
+        <input type="text" id="num">
+        <div class="btn"><button onclick="add()">Add Transaction</button></div>
+    </div>
+    </div>
+    <div class="output">
+    <h1>Transaction Details</h1>
+    <div id="result"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
